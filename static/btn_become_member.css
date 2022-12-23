@@ -1,0 +1,19 @@
+.btn_become_a_member{
+    margin: 0px;
+    background-color: rgb(52, 52, 255);
+    color: rgba(255, 255, 255, 0.929);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px ;
+    border: 1px solid rgb(52, 52, 255);
+    transition:  0.5s;
+    display: block;
+    
+}
+
+.btn_become_a_member:hover{
+    background-color:  rgba(255, 255, 255, 0.929);
+    color:rgb(52, 52, 255);
+    text-decoration: none;
+}

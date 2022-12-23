@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+}
+
+
+
+.mission.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #5000D4;
+    text-align: center;
+    color: white;
+    padding: 30px 10px 30px 10px;
+    font-size: 22px;
+    width: 100%;
+}
+
+.about-us-first-part{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 135px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-gap: 80px;
+}
+
+.about-us-first-part img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.div-about-text h1{
+    font-size: 60px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+}
+
+.values{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    grid-row-gap: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.value{
+    text-align: center;
+}
+
+.value.letter{
+
+    font-size: 100px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    border: 100px;
+    border-color: black;
+
+    border-bottom: 3px solid #4EBFFF;
+    margin-bottom: 5px;
+}
+
+.value.name{
+
+    font-size: 25px;
+}
+
+.benefits{
+    margin: auto;
+    width: 90%;
+    border-top: 3px solid #d9ecf7;
+    padding: 10px;
+}
+
+.benefits p{
+    font-size: 20px;
+}

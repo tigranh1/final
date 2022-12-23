@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Events{% endblock %}
+{% block content %}
+
+<h1>Events</h1>
+
+<div class="events-main-block" id="events-main-block" style="padding:3%; display: grid;
+grid-template-columns: repeat(3, 1fr); align-content: center;">
+
+
+    {% for event in newevents %}
+        <!-- better to make all div clickable-->
+    <div class="evnets-one-block" style="margin: 50px; display: grid;
+        grid-template-columns:; align-items: top;">
+            <a class="event-feed-img" href="/events/{{ event.title }}">
+                <img src="{{ event.cover_img }}"" alt="aa" width="300px", height="200px"/>
+            </a>
+            <p>By {{event.author}} on {{event.date_posted}}</p>
+            <a class="event-title" href="/events/{{ event.title }}"
+                >{{ event.title }}</a
+            >
+            <br />
+
+            <a class="event-title" href="/events/{{event.title}}"
+                >{{event.content[:80]}}</a
+            > 
+        </div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

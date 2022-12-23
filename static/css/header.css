@@ -1,0 +1,14 @@
+#navbarNavDropdown a{
+    transition:  0.5s;
+}
+
+#navbarNavDropdown a:hover{
+    border-radius: 5px;
+    background-color: #50bfff;
+    color: white;
+
+}
+
+#navbarNavDropdown .navbar-nav li{
+    margin: 10px;
+}

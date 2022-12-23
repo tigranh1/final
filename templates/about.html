@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}About Students Union{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}" />
+<div class="main_about_us">
+
+
+    <div class="about-us-first-part">
+        <div class="div-for-building-image">
+            <img src="{{url_for('static', filename='building.jpg')}}" alt="building">
+        </div>
+        <div class="div-about-text">
+            <h1 margin-top=10px>About us</h1>
+
+            <p>Tumo Labs Student Union - created by the students and for the students.</p>
+            <p>A Student Union is a student-led organization that represents the students at TUMO Labs.</p>
+            <p>We understood that the staff had little time, so we have decided to coordinate in order to organize leisure for ourselves, help develop the community and cooperate with other organizations at the system level</p>
+        </div>
+    </div>
+
+
+    <div class="mission container">
+        <h2><b>Our mission</b></h2>
+        <p>Our mission is to promote and protect students&#39; rights by forming a community of students who want to hear and be heard by others. Union members help others achieve their goals and simultaneously set long-term goals for the community as a whole.</p>
+    </div>
+    <br>
+    <br>
+    <h2>Our Union values are:</h2>
+
+
+
+    <div class="values">
+        <div class="value number-one">
+            <div class="value letter">
+                <p class="big_letter">T</p>
+            </div>
+            <div class="value name">
+                <p class="value announcing">Tact</p>
+            </div>
+            <div class="value description">
+                <p class="value definition">Each Union member must be polite, respect the opinions of other members and all students</p>
+            </div>
+        </div>
+
+        <div class="value number-two">
+            <div class="value letter">
+                <p class="big_letter">U</p>
+            </div>
+            <div class="value name">
+                <p class="value announcing">Unity</p>
+            </div>
+            <div class="value description">
+                <p class="value definition">Each Union member should help the others in difficult situations and in the same way, the rest will help him/her</p>
+            </div>
+        </div>
+
+        <div class="value number-three">
+            <div class="value letter">
+                <p class="big_letter">M</p>
+            </div>
+            <div class="value name">
+                <p class="value announcing">Motivation</p>
+            </div>
+            <div class="value description">
+                <p class="value definition">Union members must be motivated to improve the workflow of Tumo Labs, suggest ideas, or organize events for students to make education better.</p>
+            </div>
+        </div>
+
+        <div class="value number-four">
+            <div class="value letter">
+                <p class="big_letter">O</p>
+            </div>
+            <div class="value name">
+                <p class="value announcing">Opportunity</p>
+            </div>
+            <div class="value description">
+                <p class="value definition">Union is an opportunity to find like-minded people who like what you like too. Working together is always easier and more productive</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="benefits">
+        <h2 style="font-size: 50px;">Benefits</h2>
+        <p>What do you get as a Union member?</p>
+        <ol type="1">
+            <li>You can promote exactly what you are interested in - sports, games, art, music events, workshops organizations & more</li>
+            <li>Collaboration with other companies - Union will work with local and national companies to give you discounts on services products and services they offer</li>
+            <li>Opportunity to become a leader</li>
+        </ol>
+        
+        <p>Everyone can become a member of the Student Union, regardless of where he studies or works.</p>
+
+        <p>All you need to do is to <a class="text link" href="https://docs.google.com/forms/d/e/1FAIpQLSduyH-aDLjCTuL5h2v-cokJgumRpwAkluEvKtPaCEpyfAKfkg/viewform?usp=sf_link">fill out the form</a> (by submitting you will only declare your desire to know more about how to become a member). After that, you will be contacted at the phone number or email you specified for further actions</p>
+    </div>
+
+
+
+</div>  
+
+{% endblock %}

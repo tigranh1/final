@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ newsname }}{% endblock %}
+
+{% block content %}
+
+{% for newpost in newsposts %}
+    {% if newpost.title == newsname %}
+        <img src="{{ newpost.cover_img }}"" alt="{{ newsname }}" width="500">
+        <p>By {{newpost.author}} on {{newpost.date_posted}}</p>
+        <h1>{{ newpost.title }}</h1>
+
+        <p>{{newpost.content }}</p>
+        
+    {% endif %}
+
+{% endfor %}
+
+{% endblock %}

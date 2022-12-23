@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ eventname }}{% endblock %}
+
+{% block content %}
+
+{% for event in newevents %}
+    {% if event.title == eventname %}
+        <img src="{{ event.cover_img }}"" alt="{{ eventname }}" width="500">
+        <p>By {{event.author}} on {{event.date_posted}}</p>
+        <h1>{{ event.title }}</h1>
+
+        <p>{{event.content}}</p>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}

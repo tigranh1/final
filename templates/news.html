@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='news.css')}}" />
+{% block title %}News{% endblock %}
+
+{% block content %}
+
+<h1>Latest news in Tumo Labs</h1>
+<div class="news-main-block" id="news-main-block" style="padding:3%; display: grid;
+grid-template-columns: repeat(3, 1fr); align-content: center;">
+
+ 
+
+  {% for newpost in newsposts %}
+
+  <!-- better to make all div clickable-->
+  
+  <div class="news-one-block" style="margin: 50px; display: grid;
+  grid-template-columns: align-items: top;">
+  <div>
+    <a class="newpost-feed-img" href="/news/{{ newpost.title }}">
+      <img src="{{ newpost.cover_img }}"" alt="aa" width="300px", height="200px"/>
+    </a>
+    <p>By {{newpost.author}} on {{newpost.date_posted}}</p>
+    <a class="newpost-title" href="/news/{{ newpost.title }}"
+      >{{ newpost.title }}</a
+    >
+    <br />
+
+    <a class="newpost-title" href="/news/{{newpost.title}}"
+      >{{newpost.content[:60]}}...</a
+    >
+  </div>
+  </div>
+
+  {% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Tumo Labs Students Union{% endblock %}
+
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+
+
+
+
+<!-- Slider -->
+<div class="div_slider">
+<div class="img-slider">
+    <!-- Slide01 -->
+    <div class="slide active">
+      <img src="{{url_for('static', filename='labs_students.jpg')}}" alt="" />
+      <div class="info">
+        <h2>Tumo Labs Student Union</h2>
+        <p>A place where you can realize your full potential</p>
+      </div>
+    </div>
+    <!-- Slide02 -->
+    <div class="slide">
+      <img src="{{url_for('static', filename='girl.jpg')}}" alt="" />
+      <div class="info">
+        <h2>show your creativity</h2>
+        <p>Organize and participate in the events you want</p>
+      </div>
+    </div>
+
+    <!-- Slide03 -->
+    <div class="slide">
+      <img src="{{url_for('static', filename='Sasun_VX.jpg')}}" alt="" />
+      <div class="info">
+        <h2>Advance Your Career to the Next Level</h2>
+        <p>Companies offer jobs to proactive people</p>
+      </div>
+    </div>
+
+    <!-- Slide04 -->
+    <div class="slide">
+      <img src="{{url_for('static', filename='labs_js.jpg')}}" alt="" />
+      <div class="info">
+        <h2>Become a member of the Student Union</h2>
+        <p>Cooperate with people like you to achieve more</p>
+      </div>
+    </div>
+    <!-- navigation -->
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+</div>
+  <script src="{{url_for('static', filename='slider.js')}}"></script>
+
+
+<!-- Lilit part -->
+
+<div class="grid-item">
+  Student Unions are powerful organizations, but only have the ability to make changes if they have students who engage with them - so make sure you get involved.     
+  Whether that's completing a survey, voting in the elections, or standing to be one of the Student Representatives.
+ </div>
+ <div class="grid-item">Together students can achieve more. It sums up perfectly what we're about. We are lots of things, but at heart we have a few important values.</h1>
+ </div>
+ <div class="grid-item"><strong>We are...</strong>
+  
+<div class="grid-container">
+
+<div class="grid-item">
+  
+    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436837.png" width="75" height="75">
+    <b>Student-Focused </b>
+    <br>
+    <p>
+      It might seem obvious, but we are the organization on campus that can truly, always put students first. Let&#39;s not forget that.
+    </p>
+  
+</div>
+
+<div class="grid-item">
+  <img src="https://cdn-icons-png.flaticon.com/512/3220/3220733.png" width="75" height="75">
+  <b>Fun</b>
+  <br>
+  We want to enjoy the things we do, and we should all have fun while we&#39;re doing it.
+</div>
+
+<div class="grid-item">
+  <img src="https://cdn-icons-png.flaticon.com/512/8712/8712064.png"  width="75" height="75">
+  <b>Brave</b>
+  <br>
+  We should step out of our comfort zone and try new things - even if it might be a bit risky and fail.</div>
+    
+<div class="grid-item">
+  
+  <img src="https://cdn-icons-png.flaticon.com/512/5486/5486092.png"  width="75" height="75">
+  <b>Welcoming</b>
+  <br>
+  We have our arms open wide to any student, no matter your background, culture, viewpoint, or needs.
+
+</div>
+
+
+
+{% endblock %}
